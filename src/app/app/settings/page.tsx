@@ -3,7 +3,7 @@ import {
   DashboardPageHeader,
   DashboardPageHeaderTitle,
   DashboardPageMain,
-} from '@/components/dashboard/page'
+} from "@/components/dashboard/page";
 
 export default function Page() {
   return (
@@ -15,5 +15,5 @@ export default function Page() {
         <h1>Configurações</h1>
       </DashboardPageMain>
     </DashboardPage>
-  )
+  );
 }

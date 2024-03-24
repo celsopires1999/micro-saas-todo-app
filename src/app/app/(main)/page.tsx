@@ -4,15 +4,15 @@ import {
   DashboardPageHeaderNav,
   DashboardPageHeaderTitle,
   DashboardPageMain,
-} from '@/components/dashboard/page'
-import { TodoDataTable } from './_components/todo-data-table'
-import { TodoUpsertSheet } from './_components/todo-upsert-sheet'
-import { Button } from '@/components/ui/button'
-import { PlusIcon } from '@radix-ui/react-icons'
-import { getUserTodos } from './actions'
+} from "@/components/dashboard/page";
+import { TodoDataTable } from "./_components/todo-data-table";
+import { TodoUpsertSheet } from "./_components/todo-upsert-sheet";
+import { Button } from "@/components/ui/button";
+import { PlusIcon } from "@radix-ui/react-icons";
+import { getUserTodos } from "./actions";
 
 export default async function Page() {
-  const todos = await getUserTodos()
+  const todos = await getUserTodos();
 
   return (
     <DashboardPage>
@@ -33,5 +33,5 @@ export default async function Page() {
         <TodoDataTable data={todos} />
       </DashboardPageMain>
     </DashboardPage>
-  )
+  );
 }
